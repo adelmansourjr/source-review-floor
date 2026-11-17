@@ -36,10 +36,14 @@ The six tapes reuse the same historical ballots and overlapping triplets, so the
 Use Python 3.12 and NumPy 2.4.6. From the repository root:
 
 ```sh
-python pabulib_data.py public-ballots
+python -m pip install numpy==2.4.6
+git clone https://github.com/adelmansourjr/human-centered-review.git review-upstream
+git -C review-upstream checkout --detach ce83d4a277efd8850e6d028c565fbfc594c504eb
+python review-upstream/pabulib_data.py public-ballots
+export REVIEW_UPSTREAM="$PWD/review-upstream"
 OPENBLAS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 OMP_NUM_THREADS=1 \
-  python -B source-review-floor/unique-review/study.py \
-  --data-dir public-ballots --verify source-review-floor/unique-review/results.json
+  python -B unique-review/study.py \
+  --data-dir public-ballots --verify unique-review/results.json
 ```
 
 The loader verifies file checksums against the pinned Pabulib revision. The study reads only public inputs and stores aggregate results. [Pabulib archive](https://github.com/pabulib/pabulib_files/tree/beda04462f2fbee240202510b860106ee9754dd4).
