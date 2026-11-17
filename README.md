@@ -1,5 +1,7 @@
 # Coverage floors for budgeted human review
 
+[New study: reuse one review across related decisions](unique-review/README.md). The replay counts unique ballot/project questions, tests strong reuse comparators, and certifies the predicted allocation gap.
+
 Given a cap on how many cases receive one binary review question, how much does guaranteeing minimum coverage for every data source change decision error?
 
 This follow-up reuses five historical [Pabulib](https://pabulib.org/) approval-ballot collections and the pinned [Human-Centered Review](https://github.com/adelmansourjr/human-centered-review/tree/ce83d4a277efd8850e6d028c565fbfc594c504eb) posterior and query rule. There are 7,969 assessment ballots, each evaluated on 35 overlapping project triplets. All policies receive exactly 69,728 reviews per tape over 278,915 ballot-triplet cases. The two strong comparators are global ranking by predicted risk reduction and proportional source quotas with the same risk-reduction ranking within each source. The proposed policy reserves each source's best-ranked cases up to its minimum requirement, then allocates the remaining seats globally. This maximizes total predicted gain under the specified coverage constraints and fixed unit query cost. The evaluator independently checks this property against exhaustive enumeration on 20 small cases.

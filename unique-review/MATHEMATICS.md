@@ -1,0 +1,17 @@
+# A certificate for fixed-budget review with answer reuse
+
+Let a question identify a ballot/project pair. A triplet's decision uses only its three reports and the answers to purchased questions on those three projects. For each ballot, enumerate all 128 question subsets. For integer cost k, let g(k) be the largest predicted expected reduction in the sum of 35 decision errors over subsets of size k. Decision errors are additive, so sharing a review answer across triplets does not require treating those errors as independent. This addresses non-adaptive allocation for the specified decoder.
+
+## Why isolated gains cannot characterize the value of a batch
+
+Take a single triplet of independent approvals, each with probability 1/5 conditional on its report. Reviews report the corresponding approval with probability 9/10. Without review the Bayes decision predicts no majority and incurs error 13/125. The posterior majority probability stays strictly below one half after either answer to either one of the first two questions, so one review leaves the expected error unchanged. Two positive answers give posterior approval probabilities 9/13 for the two inspected projects and 1/5 for the remaining project. The posterior majority probability then exceeds one half. The rational checker enumerates all answers and verifies that asking both questions strictly reduces expected error. The increment from the second question is larger when the first is already present. Thus predicted Bayesian error reduction is generally non-submodular, even with independent project labels and answer errors.
+
+## Why the upper bound is valid
+
+For every ballot, form the least concave majorant h of the eight points (k, g(k)). These are piecewise-linear upper bounds on each possible integer-cost value. Each hull segment lies between two integer costs. Copy its slope into each crossed unit-cost interval. The resulting slope sequence for one ballot is nonincreasing. Any integer-cost solution for the majorants is therefore a collection of slope prefixes, one per ballot. Giving tied increments a ballot-level key followed by the step index ensures an earlier increment wins a tie on the same ballot.
+
+The highest increments within a source can satisfy its floor. For any fixed source budget q at or above the floor, a highest-q prefix maximizes the sum and includes those reserved increments. Consequently reserving the best increments up to each floor cannot lower the relaxed optimum. The remaining highest increments, regardless of source, give the relaxed global optimum because the only remaining constraint is the sum of costs. Sorting uses one ordering before and after reservation, so both stages preserve each ballot's prefix.
+
+A chosen prefix determines an integer cost per ballot. When that cost falls between hull vertices, use the best genuine subset at that same integer cost. The achieved value L is feasible, so L ≤ exact optimal predicted gain ≤ U, the relaxed optimum. A zero gap certifies exact optimality. This statement concerns the audit model's predicted objective. It cannot bound realized risk when the fitted probability model is misspecified.
+
+The computations use quantized gains and double-precision slope arithmetic, and check numerical tolerances. The script also exhausts candidate allocations in 40 separately generated small instances to check both sides of the certificate.
