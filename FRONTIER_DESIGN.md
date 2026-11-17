@@ -1,0 +1,3 @@
+# Exploratory coverage frontier
+
+The primary 20% coverage constraint was nonbinding. After observing this, we specified an exploratory sensitivity analysis at rounded-up minima of 22%, 23%, 24%, and 24.9%. All analyses use the primary dataset, seeds, channels, expected-error evaluator, exact total budget, global ranking, and proportional comparator. Per tape, compute case-weighted and equal-source error and minimum source coverage. Report all four points under all three conditions. The purpose is to show the marginal price of stronger representation constraints, including differences between predicted and realized utility. Statistical population inference and a new confirmatory gate are outside this design.

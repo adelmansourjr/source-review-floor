@@ -1,0 +1,301 @@
+{
+  "assessment_ballots_per_source": [
+    346,
+    394,
+    187,
+    488,
+    6554
+  ],
+  "assessment_cases_per_source": [
+    12110,
+    13790,
+    6545,
+    17080,
+    229390
+  ],
+  "conditions": {
+    "nominal": {
+      "floor_minus_global": {
+        "mean_case_weighted_error_change": 0.0,
+        "mean_minimum_source_coverage_change": 0.0,
+        "per_tape_case_weighted_error_change": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_tape_minimum_source_coverage_change": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_metrics": {
+        "coverage_floor": {
+          "case_weighted_error": 0.07886390118853415,
+          "equal_source_error": 0.15810122130109755,
+          "minimum_source_coverage": 0.21665776624961858,
+          "source_coverage": [
+            0.3926610239471511,
+            0.44752538071065984,
+            0.4636363636363636,
+            0.3552620023419204,
+            0.21665776624961858
+          ],
+          "source_error": [
+            0.17586189099916597,
+            0.17557015953588379,
+            0.23583269671504392,
+            0.14469189110069272,
+            0.05854946815470131
+          ],
+          "total_predicted_gain_per_case": 0.046128020465430464
+        },
+        "global": {
+          "case_weighted_error": 0.07886390118853415,
+          "equal_source_error": 0.15810122130109755,
+          "minimum_source_coverage": 0.21665776624961858,
+          "source_coverage": [
+            0.3926610239471511,
+            0.44752538071065984,
+            0.4636363636363636,
+            0.3552620023419204,
+            0.21665776624961858
+          ],
+          "source_error": [
+            0.17586189099916597,
+            0.17557015953588379,
+            0.23583269671504392,
+            0.14469189110069272,
+            0.05854946815470131
+          ],
+          "total_predicted_gain_per_case": 0.04612802046543047
+        },
+        "proportional": {
+          "case_weighted_error": 0.0805528566050589,
+          "equal_source_error": 0.17211097917328916,
+          "minimum_source_coverage": 0.24996180290297937,
+          "source_coverage": [
+            0.2500412881915772,
+            0.24996374184191447,
+            0.24996180290297934,
+            0.25,
+            0.24999782030602907
+          ],
+          "source_error": [
+            0.1822295623451625,
+            0.19478245105147568,
+            0.2750496562261214,
+            0.15096750585479435,
+            0.05752572038889188
+          ],
+          "total_predicted_gain_per_case": 0.04395263680788737
+        }
+      }
+    },
+    "shared_report_error": {
+      "floor_minus_global": {
+        "mean_case_weighted_error_change": 0.0,
+        "mean_minimum_source_coverage_change": 0.0,
+        "per_tape_case_weighted_error_change": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_tape_minimum_source_coverage_change": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_metrics": {
+        "coverage_floor": {
+          "case_weighted_error": 0.12410008425505979,
+          "equal_source_error": 0.20122858678210245,
+          "minimum_source_coverage": 0.22961659183050698,
+          "source_coverage": [
+            0.3432080924855492,
+            0.36938905003625816,
+            0.4008212375859434,
+            0.3034396955503513,
+            0.22961659183050698
+          ],
+          "source_error": [
+            0.21079066886869335,
+            0.22140409717185155,
+            0.286972880061107,
+            0.18228044496485996,
+            0.10469484284400057
+          ],
+          "total_predicted_gain_per_case": 0.05062121797194995
+        },
+        "global": {
+          "case_weighted_error": 0.12410008425505979,
+          "equal_source_error": 0.20122858678210245,
+          "minimum_source_coverage": 0.22961659183050698,
+          "source_coverage": [
+            0.3432080924855492,
+            0.36938905003625816,
+            0.4008212375859434,
+            0.3034396955503513,
+            0.22961659183050698
+          ],
+          "source_error": [
+            0.21079066886869335,
+            0.22140409717185155,
+            0.286972880061107,
+            0.18228044496485996,
+            0.10469484284400057
+          ],
+          "total_predicted_gain_per_case": 0.05062121797194995
+        },
+        "proportional": {
+          "case_weighted_error": 0.12203601455640607,
+          "equal_source_error": 0.21236747797659233,
+          "minimum_source_coverage": 0.24996180290297937,
+          "source_coverage": [
+            0.2500412881915772,
+            0.24996374184191447,
+            0.24996180290297934,
+            0.25,
+            0.24999782030602907
+          ],
+          "source_error": [
+            0.21756606110651422,
+            0.2412726613487902,
+            0.3202711993888389,
+            0.18310597189694675,
+            0.09962149614187155
+          ],
+          "total_predicted_gain_per_case": 0.049330738309927395
+        }
+      }
+    },
+    "weaker_review": {
+      "floor_minus_global": {
+        "mean_case_weighted_error_change": 0.0,
+        "mean_minimum_source_coverage_change": 0.0,
+        "per_tape_case_weighted_error_change": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "per_tape_minimum_source_coverage_change": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "mean_metrics": {
+        "coverage_floor": {
+          "case_weighted_error": 0.11286264632594159,
+          "equal_source_error": 0.20542502687415837,
+          "minimum_source_coverage": 0.21665776624961858,
+          "source_coverage": [
+            0.3926610239471511,
+            0.44752538071065984,
+            0.4636363636363636,
+            0.3552620023419204,
+            0.21665776624961858
+          ],
+          "source_error": [
+            0.22114987613543075,
+            0.23464938361132617,
+            0.29624064171122266,
+            0.1859335480093775,
+            0.08915168490343482
+          ],
+          "total_predicted_gain_per_case": 0.046128020465430464
+        },
+        "global": {
+          "case_weighted_error": 0.11286264632594159,
+          "equal_source_error": 0.20542502687415837,
+          "minimum_source_coverage": 0.21665776624961858,
+          "source_coverage": [
+            0.3926610239471511,
+            0.44752538071065984,
+            0.4636363636363636,
+            0.3552620023419204,
+            0.21665776624961858
+          ],
+          "source_error": [
+            0.22114987613543075,
+            0.23464938361132617,
+            0.29624064171122266,
+            0.1859335480093775,
+            0.08915168490343482
+          ],
+          "total_predicted_gain_per_case": 0.04612802046543047
+        },
+        "proportional": {
+          "case_weighted_error": 0.11550560206514529,
+          "equal_source_error": 0.20356211445388855,
+          "minimum_source_coverage": 0.24996180290297937,
+          "source_coverage": [
+            0.2500412881915772,
+            0.24996374184191447,
+            0.24996180290297934,
+            0.25,
+            0.24999782030602907
+          ],
+          "source_error": [
+            0.21029232039636833,
+            0.2278292240754295,
+            0.3077975553857859,
+            0.17830474238876476,
+            0.09358673002309416
+          ],
+          "total_predicted_gain_per_case": 0.04395263680788737
+        }
+      }
+    }
+  },
+  "primary_gate_met": false,
+  "protocol_sha256": "ccbe1a870ce1c41c87b2781cd37baeb4601d12f5aa5385da0cd7fc8b7f0995d2",
+  "review_floors": [
+    2422,
+    2758,
+    1309,
+    3416,
+    45878
+  ],
+  "reviews_per_tape": 69728,
+  "source_names": [
+    "Canada_Stanford_Dataset_PB_Dieppe_2018_vote_approvals.pb",
+    "Netherlands_Amsterdam_2019_Kleine_Wereld.pb",
+    "Netherlands_Amsterdam_2020_Bloemenbuurt.pb",
+    "Hungary_Budapest_2022_VIII_Jozsefvaros.pb",
+    "Poland_Wieliczka_2023_Green_Budget.pb"
+  ],
+  "tapes": 8,
+  "total_cases_per_tape": 278915
+}
